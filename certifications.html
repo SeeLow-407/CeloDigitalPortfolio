@@ -1,0 +1,153 @@
+<!-- Digital Portfolio -->
+<!-- Developer: Celo Yean -->
+<!-- Date: 4/4/2024 -->
+<!-- Purpose: A Portfolio containing all of my works, certifacates, awards, etc. -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name="description" content="Digital Portfolio">
+        <meta name="keywords" content="Digital Portfolio, Programming, Informational Technology">
+        <meta name="author" content="Celo Yean">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>
+            Certifications 
+        </title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+    </head>
+
+    <body>
+        <div class = "navbar">
+
+            <p class = "navbar">
+
+                <ul class = "navbar">
+
+                    <nav class = "navbar">
+
+                        <a href = "index.html" class = "nav-branding"></a> <!-- homepage -->
+            
+                        <ul class = "nav-menu">
+            
+                            <li class = "intro">Celo Yean <br> <span style="font-size: 15px;"> Programmer / IT Specialist </span></li>
+            
+                            <li class= "nav-item">
+                                <a href = "index.html" class = "nav-link"> <span class = "nav"> Home </span></a> <!-- homepage -->
+                            </li>
+            
+                            <li class= "nav-item">
+                                <a href = "resume.html" class = "nav-link"> Resume </a>
+                            </li>
+            
+                            <li class= "nav-item">
+                                <a href = "worksamples.html" class = "nav-link"> Work Samples </a>
+                            </li>
+            
+                            <li class= "nav-item">
+                                <a href = "certifications.html" class = "nav-link"> Certifications </a>
+                            </li>
+            
+                            <li class= "nav-item">
+                                <a href = "awards.html" class = "nav-link"> Awards </a>
+                            </li>
+            
+                        </ul>
+            
+                        <div class = "hamburger">
+            
+                            <span class = "bar"></span>
+                            <span class = "bar"></span>
+                            <span class = "bar"></span>
+            
+                        </div>
+            
+                        <script>
+                            const hamburger = document.querySelector(".hamburger");
+                            const navMenu = document.querySelector(".nav-menu");
+            
+                            hamburger.addEventListener("click", () => {
+            
+                            hamburger.classList.toggle("active");
+                            navMenu.classList.toggle("active");
+            
+                            });
+            
+                            document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            
+                                hamburger.classList.remove("active");
+                                navMenu.classList.remove("active");
+            
+                            }));
+                        </script>
+            
+                    </nav>
+            
+                </header>
+
+                </ul>
+                
+            </p>
+
+        </div>
+
+        <script>
+            var slideIndexTwo = 1;
+            showDivsTwo(slideIndexTwo);
+            
+            function plusDivsTwo(n) {
+                showDivsTwo(slideIndexTwo += n);
+            }
+            
+            function showDivsTwo(n) {
+              var i;
+              var x = document.getElementsByClassName("certificate");
+              if (n > x.length) {slideIndexTwo = 1}
+              if (n < 1) {slideIndexTwo = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndexTwo-1].style.display = "block";  
+            }
+        </script>
+
+        <h1 class = "title">
+            Certificates <br> <span style = "font-size: 20px; ">Certificates I earned so far which include, Certified Internet Web Professional, Information Technology Specialist,
+                 Microsoft Technology Associate, TestOut </span>
+        </h1>
+
+        <hr>
+        
+
+            <embed class = "certificate" style = "display: block;" src = "Certificates\CIW Site Development Associate certificate.pdf" type = "application/pdf">
+            <embed class = "certificate" src = "Certificates\Information Technology Specialist Computational Thinking.pdf" type = "application/pdf">
+            <embed class = "certificate" src = "Certificates\Information Technology Specialist Data Analytics.pdf" type = "application/pdf">
+            <embed class = "certificate" src = "Certificates\Information Technology Specialist HTML and CSS.pdf" type = "application/pdf">
+            <embed class = "certificate" src = "Certificates\Information Technology Specialist JavaScript.pdf" type = "application/pdf">
+            <embed class = "certificate" src = "Certificates\Microsoft Technology Associate Introduction to Programming using HTML and CSS.pdf" type = "application/pdf">
+            <embed class = "certificate" src = "Certificates\Microsoft Technology Associate Introduction to Programming using JavaScript.pdf" type = "application/pdf">
+            <embed class = "certificate" src = "Certificates\TestOut IT Fundamentals Pro Certificate.pdf" type = "application/pdf">
+            <embed class = "certificate" src = "Certificates\TestOut PC Pro Certificate.pdf" type = "application/pdf">
+            
+            <br>
+            <br>
+    
+            <button class = "GoRight"  onclick="plusDivsTwo(-1)">&#10094;</button>
+            <button class = "GoLeft" onclick="plusDivsTwo(1)">&#10095;</button>
+
+            <br>
+            <br>
+
+        <div class = "footer">
+            <footer span class = "credits">
+                <p>Website Developed By Celo Yean</p>
+                <p>Contact: <a href = "mailto:celotyean@gmail.com"> celotyean@gmail.com </a> </p>
+                <p>Created: 4/8/24</p>
+                <p>Published:</p>
+            </footer>
+        </div>
+
+    </body>
+
+    </html>
