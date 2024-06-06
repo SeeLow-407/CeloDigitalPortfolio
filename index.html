@@ -1,0 +1,151 @@
+<!-- Digital Portfolio -->
+<!-- Developer: Celo Yean -->
+<!-- Date: 4/4/2024 -->
+<!-- Purpose: A Portfolio containing all of my works, certifacates, awards, etc. -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name="description" content="Digital Portfolio">
+        <meta name="keywords" content="Digital Portfolio, Programming, Informational Technology">
+        <meta name="author" content="Celo Yean">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>
+            Digital Portfolio
+        </title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+    </head>
+
+    <body>
+
+        <div class = "navbar">
+
+            <p  class = "navbar">
+
+                <ul  class = "navbar">
+
+                    <nav  class = "navbar">
+
+                        <a href = "index.html" class = "nav-branding"></a> <!-- homepage -->
+            
+                        <ul  class = "nav-menu">
+            
+                            <li  class = "intro">Celo Yean <br> <span style="font-size: 15px;"> Programmer / IT Specialist </span></li>
+            
+                            <li class= "nav-item">
+                                <a href = "index.html" class = "nav-link"> <span class = "nav"> Home </span></a> <!-- homepage -->
+                            </li>
+            
+                            <li class= "nav-item">
+                                <a href = "resume.html" class = "nav-link"> Resume </a>
+                            </li>
+            
+                            <li class= "nav-item">
+                                <a href = "worksamples.html" class = "nav-link"> Work Samples </a>
+                            </li>
+            
+                            <li class= "nav-item">
+                                <a href = "certifications.html" class = "nav-link"> Certifications </a>
+                            </li>
+            
+                            <li class= "nav-item">
+                                <a href = "awards.html" class = "nav-link"> Awards </a>
+                            </li>
+            
+                        </ul>
+            
+                        <div class = "hamburger">
+            
+                            <span class = "bar"></span>
+                            <span class = "bar"></span>
+                            <span class = "bar"></span>
+            
+                        </div>
+            
+                        <script>
+                            const hamburger = document.querySelector(".hamburger");
+                            const navMenu = document.querySelector(".nav-menu");
+            
+                            hamburger.addEventListener("click", () => {
+            
+                            hamburger.classList.toggle("active");
+                            navMenu.classList.toggle("active");
+            
+                            });
+            
+                            document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            
+                                hamburger.classList.remove("active");
+                                navMenu.classList.remove("active");
+            
+                            }));
+                        </script>
+            
+                    </nav>
+            
+                </header>
+
+                </ul>
+                
+            </p>
+
+        </div>
+
+        <h1 class = "title">
+            Welcome!
+        </h1>
+        
+        <div class = "main">
+            
+            <img class = "autoslides" src = "Images\CIWlogo.png" alt = "CIWlogo">
+            <img class = "autoslides" src = "Images\ITSlogo.png" alt = "ITSlogo">
+            <img class = "autoslides" src = "Images\MTAlogo.png" alt = "MTAlogo">
+            <img class = "autoslides" src = "Images\TestOutlogo.png" alt = "TestOutlogo">
+            <img class = "autoslides" src = "Images\HTMLlogo.png" alt = "HTMLlogo">
+            <img class = "autoslides" src = "Images\CSSlogo.png" alt = "CSSlogo">
+            <img class = "autoslides" src = "Images\JSlogo.png" alt = "JSlogo">
+            <img class = "autoslides" src = "Images\Pythonlogo.png" alt = "Pythonlogo">
+            <img class = "autoslides" src = "Images\VBlogo.png" alt = "VBlogo">
+
+            <p span class = "main" style = "display: inline-block;">
+                Hello, I am Celo Yean a Junior at Greater Lowell Technical High School. 
+                I am studying in Informational Technology Services enrolling in courses
+                like HTML 5, CSS, JavaScript, Python, Visual Basic and many more. I enjoy what I do in ITS in which I hope to 
+                pursue a career in this industry. I am a member in groups like National Technical Honor Society, National Honor Society 
+                and SkillsUSA. This Digital Portforlio represents my progress throughout my years.
+            </p>
+
+        </div>
+
+        
+
+        <div class = "footer">
+            <footer class = "credits">
+                <p>Website Developed By Celo Yean</p>
+                <p>Contact: <a href = "mailto:celotyean@gmail.com"> celotyean@gmail.com </a></p>
+                <p>Created: 4/8/24</p>
+                <p>Published:</p>
+            </footer>
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("autoslides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+        </script>
+    </body>
+
+</html>
