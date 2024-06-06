@@ -1,0 +1,115 @@
+<!-- Digital Portfolio -->
+<!-- Developer: Celo Yean -->
+<!-- Date: 4/4/2024 -->
+<!-- Purpose: A Portfolio containing all of my works, certifacates, awards, etc. -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name="description" content="Digital Portfolio">
+        <meta name="keywords" content="Digital Portfolio, Programming, Informational Technology">
+        <meta name="author" content="Celo Yean">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>
+            Resume
+        </title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+    </head>
+
+    <body>
+
+        <div  class = "navbar">
+
+            <p class = "navbar">
+
+                <ul class = "navbar">
+
+                    <nav class = "navbar">
+
+                        <a href = "index.html" class = "nav-branding"></a> <!-- homepage -->
+            
+                        <ul class = "nav-menu">
+            
+                            <li class = "intro">Celo Yean <br> <span style="font-size: 15px;"> Programmer / IT Specialist </span></li>
+            
+                            <li class= "nav-item">
+                                <a href = "index.html" class = "nav-link"> <span class = "nav"> Home </span></a> <!-- homepage -->
+                            </li>
+            
+                            <li class= "nav-item">
+                                <a href = "resume.html" class = "nav-link"> Resume </a>
+                            </li>
+            
+                            <li class= "nav-item">
+                                <a href = "worksamples.html" class = "nav-link"> Work Samples </a>
+                            </li>
+            
+                            <li class= "nav-item">
+                                <a href = "certifications.html" class = "nav-link"> Certifications </a>
+                            </li>
+            
+                            <li class= "nav-item">
+                                <a href = "awards.html" class = "nav-link"> Awards </a>
+                            </li>
+            
+                        </ul>
+            
+                        <div class = "hamburger">
+            
+                            <span class = "bar"></span>
+                            <span class = "bar"></span>
+                            <span class = "bar"></span>
+            
+                        </div>
+            
+                        <script>
+                            const hamburger = document.querySelector(".hamburger");
+                            const navMenu = document.querySelector(".nav-menu");
+            
+                            hamburger.addEventListener("click", () => {
+            
+                            hamburger.classList.toggle("active");
+                            navMenu.classList.toggle("active");
+            
+                            });
+            
+                            document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            
+                                hamburger.classList.remove("active");
+                                navMenu.classList.remove("active");
+            
+                            }));
+                        </script>
+            
+                    </nav>
+            
+                </header>
+
+                </ul>
+                
+            </p>
+
+        </div>
+
+        <h1 class = "title">
+            Resume
+        </h1>
+
+        <a href = "Images/Resume.jpg" download>
+            <img class = "resume" src = "Images/Resume.jpg" alt = "Resume">
+        </a>
+
+        <div class = "footer">
+            <footer span class = "credits">
+                <p>Website Developed By Celo Yean</p>
+                <p>Contact: <a href = "mailto:celotyean@gmail.com"> celotyean@gmail.com </a> </p>
+                <p>Created: 4/8/24</p>
+                <p>Published:</p>
+            </footer>
+        </div>
+
+    </body>
+
+    </html>
