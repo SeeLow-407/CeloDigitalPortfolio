@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Jump, Jump, Polarbear!
+        </title>
+        <link rel = "stylesheet" type = "text/css" href = "stylesheet.css">
+    </head>
+    <body>
+        <p>
+           <span class="home">Home</span> <span class="aboutus">About Us</span> <span class="help">Help</span> <span class="download">Download</span>
+        </p>
+        <h1>Welcome</h1>
+    </body>
+</html>
