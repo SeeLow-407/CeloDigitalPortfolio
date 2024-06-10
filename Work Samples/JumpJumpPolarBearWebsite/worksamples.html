@@ -1,0 +1,204 @@
+<!-- Digital Portfolio -->
+<!-- Developer: Celo Yean -->
+<!-- Date: 4/4/2024 -->
+<!-- Purpose: A Portfolio containing all of my works, certifacates, awards, etc. -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "description" content = "Digital Portfolio">
+        <meta name = "keywords" content = "Digital Portfolio, Programming, Informational Technology">
+        <meta name = "author" content = "Celo Yean">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>
+            Work Samples
+        </title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+    </head>
+
+    <body>
+        
+        <nav class = "navbar">
+        
+            <a href = "index.html" class = "nav-branding"></a> <!-- homepage -->
+
+            <ul class = "nav-menu"> <!-- center this-->
+
+                <li class = "intro">Celo Yean <br> <span style="font-size: 15px;"> Programmer / IT Specialist </span></li> <!-- go left -->
+
+                <li class= "nav-item"> <!-- go right -->
+                    <a href = "index.html" class = "nav-link"> <span class = "nav"> Home </span></a> <!-- homepage -->
+                </li>
+
+                <li class= "nav-item">
+                    <a href = "resume.html" class = "nav-link"> Resume </a>
+                </li>
+
+                <li class= "nav-item">
+                    <a href = "worksamples.html" class = "nav-link"> Work&nbsp;Samples </a>
+                </li>
+
+                <li class= "nav-item">
+                    <a href = "certifications.html" class = "nav-link"> Certifications </a>
+                </li>
+
+                <li class= "nav-item">
+                    <a href = "awards.html" class = "nav-link"> Awards </a>
+                </li>
+
+            </ul>
+
+            <div class = "hamburger">
+
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+
+            </div>
+
+            <script>
+                const hamburger = document.querySelector(".hamburger");
+                const navMenu = document.querySelector(".nav-menu");
+
+                hamburger.addEventListener("click", () => {
+
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+
+                });
+
+                document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+
+                    hamburger.classList.remove("active");
+                    navMenu.classList.remove("active");
+
+                }));
+            </script>
+
+        </nav>
+
+    </header>
+
+        <h1 class = "title">
+            Work Samples <br> <span style = "font-size: 25px;">Samples of my Works</span>
+        </h1>
+        <hr>
+        <h1 class = "title">
+            Game Project Website (Jump, Jump, Polarbear!) <br> <span style = "font-size: 25px;">HTML and CSS Project</span>
+        </h1>
+
+        <div class = "mainws">
+
+            <iframe class = "worksample" style = "margin-left: auto;" src = "Work Samples\JumpJumpPolarBearWebsite\index.html"></iframe>
+            <div class = "worksamplepg" style = "margin-right: auto;">
+            This project purpose was to help present our video game, Jump Jump PolarBear, just like this portfolio I also developed this
+            website. There are four functioning pages, a Homepage, About Us, Help and Download Page. One strong point in this project is the Media Queries. 
+            It is responsive and smooth to not only PC, but Tablets and Phones as well.  Developed with HTML and CSS. 
+            <br><br>
+            <a style = "text-decoration: none;" href = "Work Samples\JumpJumpPolarBearWebsite\index.html">Here is a link to see the full page! </a>
+            </div>
+            
+        </div>
+
+        <script>
+            var slideIndex = [1,1];
+            var slideId = ["slides", "slidestwo"]
+            showDivs(1, 0);
+            showDivs(1, 1);
+
+            function plusDivs(n, no) {
+                showDivs(slideIndex[no] += n, no);
+            }
+
+            function showDivs(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  }
+        </script>
+
+        <h1 class = "title">
+            Wage Calculator Application <br> <span style = "font-size: 25px;">VB.NET Project</span>
+        </h1>
+
+        <div class = "main">
+
+            <div class = "worksample" style = "margin-left: auto;">
+
+                <img class = "slides" style = "display:block;" src = "Images/WageAppCode1.jpg">
+                <img class = "slides" src = "Images/WageAppCode2.jpg">
+                <img class = "slides" src = "Images/WageAppCode3.jpg">
+                <img class = "slides" src = "Images/WageAppCode4.jpg">
+                <img class = "slides" src = "Images/WageAppCode5.jpg">
+                <img class = "slides" src = "Images/WageAppCode6.jpg">
+                <img class = "slides" src = "Images/WageAppCode7.jpg">
+                <img class = "slides" src = "Images/WageAppGUI1.jpg">
+                <img class = "slides" src = "Images/WageAppGUI2.jpg">
+                <img class = "slides" src = "Images/WageAppGUI3.jpg">
+                <img class = "slides" src = "Images/WageAppGUI4.jpg">
+                
+                <br>
+                <br>
+
+                <button class = "GoRight"  onclick="plusDivs(-1, 0)">&#10094;</button>
+                <button class = "GoLeft" onclick="plusDivs(+1, 0)">&#10095;</button>
+
+            </div>
+
+            <div class = "worksamplepg">This project purpose was to create a Windows Form Application on Visual Studio 2017. I was meant to follow the
+                app requirements, in which it would allow us to calculate the wage of an employee that was either Part or Full-time. Calculate the deductions of Taxes and display 
+                their overall pay. Developed with Visual Basic.
+
+            </div>
+
+        </div>
+
+        <h1 class = "title">
+            Home Down Payment Application <br> <span style = "font-size: 25px;">VB.NET Project</span>
+        </h1>
+
+        <div class = "main">
+
+            <div class = "worksampletwo" style = "margin-left: auto;">
+                
+                <img class = "slidestwo" style = "display: block;" src = "Images\HomePaymentCode1.png">
+                <img class = "slidestwo" src = "Images\HomePaymentCode2.png">
+                <img class = "slidestwo" src = "Images\HomePaymentCode3.png">
+                <img class = "slidestwo" src = "Images\HomePaymentGUI1.png">
+                <img class = "slidestwo" src = "Images\HomePaymentGUI2.png">
+                <img class = "slidestwo" src = "Images\HomePaymentGUI3.png">
+    
+                <br>
+                <br>
+    
+                    <button class = "GoRight"  onclick="plusDivs(-1, 1)">&#10094;</button>
+                    <button class = "GoLeft" onclick="plusDivs(+1, 1)">&#10095;</button>
+            
+            </div>
+        
+            <div class = "worksamplepg">This project purpose was to create a Windows Form Application on Visual Studio 2017. 
+                I was to develop an App that would determine whether you would have enough money save for a down payment. 
+                Calculate the deductions of Taxes and display their overall pay. Developed with Visual Basic.
+
+            </div>
+            
+        <hr>
+
+        <div class = "footer">
+            <footer span class = "credits">
+                <p>Website Developed By Celo Yean</p>
+                <p>Contact: <a href = "mailto:celotyean@gmail.com"> celotyean@gmail.com </a> </p>
+                <p>Created: 4/8/24</p>
+                <p>Published:</p>
+            </footer>
+        </div>
+
+    </body>
+
+    </html>
